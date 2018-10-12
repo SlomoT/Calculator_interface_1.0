@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="修改联系人"
+        android:textSize="70px"
+        />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/n"
+            android:layout_below="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="姓名"
+            android:textSize="48px"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_toRightOf="@id/n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="name"
+            />
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow1"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="电话"
+            android:textSize="48px"
+            />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/p"
+            android:hint="phone number"
+            android:digits="1234567890"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow2"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/QButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/CButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+    </TableRow>
+
+</RelativeLayout>

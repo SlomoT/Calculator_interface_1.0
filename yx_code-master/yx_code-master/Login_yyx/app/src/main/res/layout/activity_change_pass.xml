@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="修改密码"
+        android:textSize="70px"
+        />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/n"
+            android:layout_below="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="用户名"
+            android:textSize="48px"
+            />
+
+        <EditText
+            android:id="@+id/name_c"
+            android:layout_toRightOf="@id/n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="name"
+            />
+    </TableRow>
+
+    <!--定义表格布局作为第二行，放在第一个表格布局的下方-->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow1"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="旧密码"
+            android:textSize="48px"
+            />
+
+        <EditText
+            android:id="@+id/pass_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/p"
+            android:hint="password"
+            android:inputType="textPassword"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow2"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="新密码"
+            android:textSize="48px"
+            />
+
+        <EditText
+            android:id="@+id/npass_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/p"
+            android:hint="password"
+            android:inputType="textPassword"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow3"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/QButton_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/CButton_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+    </TableRow>
+</RelativeLayout>
